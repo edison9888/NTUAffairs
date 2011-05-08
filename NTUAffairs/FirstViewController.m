@@ -77,7 +77,7 @@
 - (void)viewDidLoad
 {
     // set title
-    self.title = @"校務建言系統";
+    self.title = @"校務建言";
     
     // listen for keyboard appear notifications
     [[NSNotificationCenter defaultCenter] addObserver:self
