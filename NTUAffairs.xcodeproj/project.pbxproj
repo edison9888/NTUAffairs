@@ -1,0 +1,364 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C42B669D1376AE8500AE0E67 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C42B669C1376AE8500AE0E67 /* QuartzCore.framework */; };
+		C45A18941376CABC00036E19 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C45A18911376CABC00036E19 /* FirstViewController.m */; };
+		C45A18951376CABC00036E19 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C45A18931376CABC00036E19 /* SecondViewController.m */; };
+		C45A189A1376CAE200036E19 /* tabbar_suggestions.png in Resources */ = {isa = PBXBuildFile; fileRef = C45A18971376CAE200036E19 /* tabbar_suggestions.png */; };
+		C45A189B1376CAE200036E19 /* tabbar_suggestions@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C45A18981376CAE200036E19 /* tabbar_suggestions@2x.png */; };
+		C45A18A11376CAEF00036E19 /* CustomAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = C45A189D1376CAEF00036E19 /* CustomAlertView.m */; };
+		C45A18A21376CAEF00036E19 /* CustomAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C45A189E1376CAEF00036E19 /* CustomAlertView.xib */; };
+		C45A18A31376CAEF00036E19 /* UIView-AlertAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = C45A18A01376CAEF00036E19 /* UIView-AlertAnimations.m */; };
+		C45A18B01376CDEC00036E19 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C45A18AC1376CDEC00036E19 /* Icon@2x.png */; };
+		C45A18B11376CDEC00036E19 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C45A18AD1376CDEC00036E19 /* Icon.png */; };
+		C45A18B21376CDEC00036E19 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C45A18AE1376CDEC00036E19 /* Icon-Small@2x.png */; };
+		C45A18B31376CDEC00036E19 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = C45A18AF1376CDEC00036E19 /* Icon-Small.png */; };
+		C4DA82BC1374CD090027E634 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4DA82BB1374CD090027E634 /* UIKit.framework */; };
+		C4DA82BE1374CD090027E634 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4DA82BD1374CD090027E634 /* Foundation.framework */; };
+		C4DA82C01374CD090027E634 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4DA82BF1374CD090027E634 /* CoreGraphics.framework */; };
+		C4DA82C61374CD090027E634 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C4DA82C41374CD090027E634 /* InfoPlist.strings */; };
+		C4DA82C91374CD090027E634 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DA82C81374CD090027E634 /* main.m */; };
+		C4DA82CC1374CD090027E634 /* NTUAffairsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DA82CB1374CD090027E634 /* NTUAffairsAppDelegate.m */; };
+		C4DA82CF1374CD0A0027E634 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4DA82CD1374CD0A0027E634 /* MainWindow.xib */; };
+		C4DA82D81374CD0A0027E634 /* FirstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4DA82D61374CD0A0027E634 /* FirstView.xib */; };
+		C4DA82DB1374CD0A0027E634 /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4DA82D91374CD0A0027E634 /* SecondView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C42B669C1376AE8500AE0E67 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C45A18901376CABC00036E19 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirstViewController.h; path = ViewControllers/FirstViewController.h; sourceTree = "<group>"; };
+		C45A18911376CABC00036E19 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirstViewController.m; path = ViewControllers/FirstViewController.m; sourceTree = "<group>"; };
+		C45A18921376CABC00036E19 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SecondViewController.h; path = ViewControllers/SecondViewController.h; sourceTree = "<group>"; };
+		C45A18931376CABC00036E19 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SecondViewController.m; path = ViewControllers/SecondViewController.m; sourceTree = "<group>"; };
+		C45A18971376CAE200036E19 /* tabbar_suggestions.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tabbar_suggestions.png; path = Images/tabbar_suggestions.png; sourceTree = "<group>"; };
+		C45A18981376CAE200036E19 /* tabbar_suggestions@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbar_suggestions@2x.png"; path = "Images/tabbar_suggestions@2x.png"; sourceTree = "<group>"; };
+		C45A189C1376CAEF00036E19 /* CustomAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomAlertView.h; path = CustomViewController/CustomAlertView.h; sourceTree = "<group>"; };
+		C45A189D1376CAEF00036E19 /* CustomAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomAlertView.m; path = CustomViewController/CustomAlertView.m; sourceTree = "<group>"; };
+		C45A189E1376CAEF00036E19 /* CustomAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CustomAlertView.xib; path = CustomViewController/CustomAlertView.xib; sourceTree = "<group>"; };
+		C45A189F1376CAEF00036E19 /* UIView-AlertAnimations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView-AlertAnimations.h"; path = "CustomViewController/UIView-AlertAnimations.h"; sourceTree = "<group>"; };
+		C45A18A01376CAEF00036E19 /* UIView-AlertAnimations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView-AlertAnimations.m"; path = "CustomViewController/UIView-AlertAnimations.m"; sourceTree = "<group>"; };
+		C45A18AC1376CDEC00036E19 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "Images/Icon@2x.png"; sourceTree = "<group>"; };
+		C45A18AD1376CDEC00036E19 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = Images/Icon.png; sourceTree = "<group>"; };
+		C45A18AE1376CDEC00036E19 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small@2x.png"; path = "Images/Icon-Small@2x.png"; sourceTree = "<group>"; };
+		C45A18AF1376CDEC00036E19 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small.png"; path = "Images/Icon-Small.png"; sourceTree = "<group>"; };
+		C4DA82B71374CD090027E634 /* NTUAffairs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NTUAffairs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4DA82BB1374CD090027E634 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C4DA82BD1374CD090027E634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C4DA82BF1374CD090027E634 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C4DA82C31374CD090027E634 /* NTUAffairs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NTUAffairs-Info.plist"; sourceTree = "<group>"; };
+		C4DA82C51374CD090027E634 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C4DA82C71374CD090027E634 /* NTUAffairs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NTUAffairs-Prefix.pch"; sourceTree = "<group>"; };
+		C4DA82C81374CD090027E634 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C4DA82CA1374CD090027E634 /* NTUAffairsAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTUAffairsAppDelegate.h; sourceTree = "<group>"; };
+		C4DA82CB1374CD090027E634 /* NTUAffairsAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTUAffairsAppDelegate.m; sourceTree = "<group>"; };
+		C4DA82CE1374CD0A0027E634 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		C4DA82D71374CD0A0027E634 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstView.xib; sourceTree = "<group>"; };
+		C4DA82DA1374CD0A0027E634 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C4DA82B41374CD090027E634 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C42B669D1376AE8500AE0E67 /* QuartzCore.framework in Frameworks */,
+				C4DA82BC1374CD090027E634 /* UIKit.framework in Frameworks */,
+				C4DA82BE1374CD090027E634 /* Foundation.framework in Frameworks */,
+				C4DA82C01374CD090027E634 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C4091A971376BC3600FDC574 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				C45A18AC1376CDEC00036E19 /* Icon@2x.png */,
+				C45A18AD1376CDEC00036E19 /* Icon.png */,
+				C45A18AE1376CDEC00036E19 /* Icon-Small@2x.png */,
+				C45A18AF1376CDEC00036E19 /* Icon-Small.png */,
+				C45A18971376CAE200036E19 /* tabbar_suggestions.png */,
+				C45A18981376CAE200036E19 /* tabbar_suggestions@2x.png */,
+			);
+			name = Image;
+			sourceTree = "<group>";
+		};
+		C42B669B1376ADC400AE0E67 /* Custom Alert View */ = {
+			isa = PBXGroup;
+			children = (
+				C45A189C1376CAEF00036E19 /* CustomAlertView.h */,
+				C45A189D1376CAEF00036E19 /* CustomAlertView.m */,
+				C45A189E1376CAEF00036E19 /* CustomAlertView.xib */,
+				C45A189F1376CAEF00036E19 /* UIView-AlertAnimations.h */,
+				C45A18A01376CAEF00036E19 /* UIView-AlertAnimations.m */,
+			);
+			name = "Custom Alert View";
+			sourceTree = "<group>";
+		};
+		C4DA82AC1374CD090027E634 = {
+			isa = PBXGroup;
+			children = (
+				C42B669C1376AE8500AE0E67 /* QuartzCore.framework */,
+				C4DA82C11374CD090027E634 /* NTUAffairs */,
+				C4DA82BA1374CD090027E634 /* Frameworks */,
+				C4DA82B81374CD090027E634 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C4DA82B81374CD090027E634 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C4DA82B71374CD090027E634 /* NTUAffairs.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C4DA82BA1374CD090027E634 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4DA82BB1374CD090027E634 /* UIKit.framework */,
+				C4DA82BD1374CD090027E634 /* Foundation.framework */,
+				C4DA82BF1374CD090027E634 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C4DA82C11374CD090027E634 /* NTUAffairs */ = {
+			isa = PBXGroup;
+			children = (
+				C4DA82CA1374CD090027E634 /* NTUAffairsAppDelegate.h */,
+				C4DA82CB1374CD090027E634 /* NTUAffairsAppDelegate.m */,
+				C4DA82CD1374CD0A0027E634 /* MainWindow.xib */,
+				C45A18901376CABC00036E19 /* FirstViewController.h */,
+				C45A18911376CABC00036E19 /* FirstViewController.m */,
+				C45A18921376CABC00036E19 /* SecondViewController.h */,
+				C45A18931376CABC00036E19 /* SecondViewController.m */,
+				C4DA82D61374CD0A0027E634 /* FirstView.xib */,
+				C4DA82D91374CD0A0027E634 /* SecondView.xib */,
+				C4091A971376BC3600FDC574 /* Image */,
+				C42B669B1376ADC400AE0E67 /* Custom Alert View */,
+				C4DA82C21374CD090027E634 /* Supporting Files */,
+			);
+			path = NTUAffairs;
+			sourceTree = "<group>";
+		};
+		C4DA82C21374CD090027E634 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C4DA82C31374CD090027E634 /* NTUAffairs-Info.plist */,
+				C4DA82C41374CD090027E634 /* InfoPlist.strings */,
+				C4DA82C71374CD090027E634 /* NTUAffairs-Prefix.pch */,
+				C4DA82C81374CD090027E634 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C4DA82B61374CD090027E634 /* NTUAffairs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4DA82DE1374CD0A0027E634 /* Build configuration list for PBXNativeTarget "NTUAffairs" */;
+			buildPhases = (
+				C4DA82B31374CD090027E634 /* Sources */,
+				C4DA82B41374CD090027E634 /* Frameworks */,
+				C4DA82B51374CD090027E634 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NTUAffairs;
+			productName = NTUAffairs;
+			productReference = C4DA82B71374CD090027E634 /* NTUAffairs.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C4DA82AE1374CD090027E634 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C4DA82B11374CD090027E634 /* Build configuration list for PBXProject "NTUAffairs" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C4DA82AC1374CD090027E634;
+			productRefGroup = C4DA82B81374CD090027E634 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C4DA82B61374CD090027E634 /* NTUAffairs */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C4DA82B51374CD090027E634 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4DA82C61374CD090027E634 /* InfoPlist.strings in Resources */,
+				C4DA82CF1374CD0A0027E634 /* MainWindow.xib in Resources */,
+				C4DA82D81374CD0A0027E634 /* FirstView.xib in Resources */,
+				C4DA82DB1374CD0A0027E634 /* SecondView.xib in Resources */,
+				C45A189A1376CAE200036E19 /* tabbar_suggestions.png in Resources */,
+				C45A189B1376CAE200036E19 /* tabbar_suggestions@2x.png in Resources */,
+				C45A18A21376CAEF00036E19 /* CustomAlertView.xib in Resources */,
+				C45A18B01376CDEC00036E19 /* Icon@2x.png in Resources */,
+				C45A18B11376CDEC00036E19 /* Icon.png in Resources */,
+				C45A18B21376CDEC00036E19 /* Icon-Small@2x.png in Resources */,
+				C45A18B31376CDEC00036E19 /* Icon-Small.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C4DA82B31374CD090027E634 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4DA82C91374CD090027E634 /* main.m in Sources */,
+				C4DA82CC1374CD090027E634 /* NTUAffairsAppDelegate.m in Sources */,
+				C45A18941376CABC00036E19 /* FirstViewController.m in Sources */,
+				C45A18951376CABC00036E19 /* SecondViewController.m in Sources */,
+				C45A18A11376CAEF00036E19 /* CustomAlertView.m in Sources */,
+				C45A18A31376CAEF00036E19 /* UIView-AlertAnimations.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C4DA82C41374CD090027E634 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4DA82C51374CD090027E634 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C4DA82CD1374CD0A0027E634 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4DA82CE1374CD0A0027E634 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		C4DA82D61374CD0A0027E634 /* FirstView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4DA82D71374CD0A0027E634 /* en */,
+			);
+			name = FirstView.xib;
+			sourceTree = "<group>";
+		};
+		C4DA82D91374CD0A0027E634 /* SecondView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4DA82DA1374CD0A0027E634 /* en */,
+			);
+			name = SecondView.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C4DA82DC1374CD0A0027E634 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C4DA82DD1374CD0A0027E634 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		C4DA82DF1374CD0A0027E634 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NTUAffairs/NTUAffairs-Prefix.pch";
+				INFOPLIST_FILE = "NTUAffairs/NTUAffairs-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C4DA82E01374CD0A0027E634 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NTUAffairs/NTUAffairs-Prefix.pch";
+				INFOPLIST_FILE = "NTUAffairs/NTUAffairs-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C4DA82B11374CD090027E634 /* Build configuration list for PBXProject "NTUAffairs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4DA82DC1374CD0A0027E634 /* Debug */,
+				C4DA82DD1374CD0A0027E634 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4DA82DE1374CD0A0027E634 /* Build configuration list for PBXNativeTarget "NTUAffairs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4DA82DF1374CD0A0027E634 /* Debug */,
+				C4DA82E01374CD0A0027E634 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C4DA82AE1374CD090027E634 /* Project object */;
+}
