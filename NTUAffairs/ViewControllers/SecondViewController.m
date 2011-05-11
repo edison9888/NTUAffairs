@@ -15,7 +15,7 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
-    self.title = @"更多功能";
+    self.title = @"關於";
     [super viewDidLoad];
 }
 

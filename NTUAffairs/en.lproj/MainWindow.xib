@@ -54,6 +54,7 @@
 				<object class="NSPSMatrix" key="NSFrameMatrix"/>
 				<string key="NSFrameSize">{320, 480}</string>
 				<reference key="NSSuperview"/>
+				<reference key="NSNextKeyView"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">1</int>
 					<bytes key="NSRGB">MSAxIDEAA</bytes>
@@ -73,15 +74,14 @@
 				</object>
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 				<bool key="IBUIHorizontal">NO</bool>
-				<object class="IBUINavigationController" key="IBUISelectedViewController" id="125548318">
-					<object class="IBUITabBarItem" key="IBUITabBarItem" id="456905354">
-						<string key="IBUITitle">教務建言</string>
+				<object class="IBUINavigationController" key="IBUISelectedViewController" id="1065109012">
+					<object class="IBUITabBarItem" key="IBUITabBarItem" id="957346419">
+						<string key="IBUITitle">關於</string>
 						<object class="NSCustomResource" key="IBUIImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">tabbar_suggestions.png</string>
+							<string key="NSResourceName">tabbar_info.png</string>
 						</object>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<reference key="IBUITabBar" ref="795333663"/>
 					</object>
 					<reference key="IBUIParentViewController" ref="1034742383"/>
 					<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics"/>
@@ -91,7 +91,7 @@
 					</object>
 					<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					<bool key="IBUIHorizontal">NO</bool>
-					<object class="IBUINavigationBar" key="IBUINavigationBar" id="646581963">
+					<object class="IBUINavigationBar" key="IBUINavigationBar" id="388423705">
 						<nil key="NSNextResponder"/>
 						<int key="NSvFlags">256</int>
 						<string key="NSFrameSize">{0, 0}</string>
@@ -103,20 +103,18 @@
 					</object>
 					<object class="NSMutableArray" key="IBUIViewControllers">
 						<bool key="EncodedWithXMLCoder">YES</bool>
-						<object class="IBUIViewController" id="1024858337">
-							<object class="IBUINavigationItem" key="IBUINavigationItem" id="47269415">
-								<reference key="IBUINavigationBar"/>
+						<object class="IBUIViewController" id="268481961">
+							<object class="IBUITabBarItem" key="IBUITabBarItem" id="807309489">
+								<string key="IBUITitle">更多功能</string>
+								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+								<string key="IBUIBadgeValue">敬請期待</string>
+							</object>
+							<object class="IBUINavigationItem" key="IBUINavigationItem" id="292846983">
 								<string key="IBUITitle">Item</string>
-								<object class="IBUIBarButtonItem" key="IBUIRightBarButtonItem" id="710250662">
-									<string key="IBUITitle">提交</string>
-									<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-									<int key="IBUIStyle">2</int>
-									<reference key="IBUINavigationItem" ref="47269415"/>
-								</object>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 							</object>
-							<reference key="IBUIParentViewController" ref="125548318"/>
-							<string key="IBUINibName">FirstView</string>
+							<reference key="IBUIParentViewController" ref="1065109012"/>
+							<string key="IBUINibName">SecondView</string>
 							<object class="IBUISimulatedOrientationMetrics" key="IBUISimulatedOrientationMetrics">
 								<int key="IBUIInterfaceOrientation">1</int>
 								<int key="interfaceOrientation">1</int>
@@ -128,13 +126,14 @@
 				</object>
 				<object class="NSMutableArray" key="IBUIViewControllers">
 					<bool key="EncodedWithXMLCoder">YES</bool>
-					<reference ref="125548318"/>
-					<object class="IBUINavigationController" id="1065109012">
-						<object class="IBUITabBarItem" key="IBUITabBarItem" id="957346419">
-							<string key="IBUITitle">更多功能</string>
+					<object class="IBUINavigationController" id="125548318">
+						<object class="IBUITabBarItem" key="IBUITabBarItem" id="456905354">
+							<string key="IBUITitle">教務建言</string>
+							<object class="NSCustomResource" key="IBUIImage">
+								<string key="NSClassName">NSImage</string>
+								<string key="NSResourceName">tabbar_suggestions.png</string>
+							</object>
 							<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-							<string key="IBUIBadgeValue">敬請期待</string>
-							<reference key="IBUITabBar" ref="795333663"/>
 						</object>
 						<reference key="IBUIParentViewController" ref="1034742383"/>
 						<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics"/>
@@ -144,7 +143,7 @@
 						</object>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<bool key="IBUIHorizontal">NO</bool>
-						<object class="IBUINavigationBar" key="IBUINavigationBar" id="388423705">
+						<object class="IBUINavigationBar" key="IBUINavigationBar" id="646581963">
 							<nil key="NSNextResponder"/>
 							<int key="NSvFlags">256</int>
 							<string key="NSFrameSize">{0, 0}</string>
@@ -156,18 +155,19 @@
 						</object>
 						<object class="NSMutableArray" key="IBUIViewControllers">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<object class="IBUIViewController" id="268481961">
-								<object class="IBUITabBarItem" key="IBUITabBarItem" id="807309489">
-									<string key="IBUITitle">更多功能</string>
-									<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-									<string key="IBUIBadgeValue">敬請期待</string>
-								</object>
-								<object class="IBUINavigationItem" key="IBUINavigationItem" id="292846983">
+							<object class="IBUIViewController" id="1024858337">
+								<object class="IBUINavigationItem" key="IBUINavigationItem" id="47269415">
 									<string key="IBUITitle">Item</string>
+									<object class="IBUIBarButtonItem" key="IBUIRightBarButtonItem" id="710250662">
+										<string key="IBUITitle">提交</string>
+										<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+										<int key="IBUIStyle">2</int>
+										<reference key="IBUINavigationItem" ref="47269415"/>
+									</object>
 									<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								</object>
-								<reference key="IBUIParentViewController" ref="1065109012"/>
-								<string key="IBUINibName">SecondView</string>
+								<reference key="IBUIParentViewController" ref="125548318"/>
+								<string key="IBUINibName">FirstView</string>
 								<object class="IBUISimulatedOrientationMetrics" key="IBUISimulatedOrientationMetrics">
 									<int key="IBUIInterfaceOrientation">1</int>
 									<int key="interfaceOrientation">1</int>
@@ -177,24 +177,20 @@
 							</object>
 						</object>
 					</object>
+					<reference ref="1065109012"/>
 				</object>
 				<object class="IBUITabBar" key="IBUITabBar" id="795333663">
 					<reference key="NSNextResponder"/>
 					<int key="NSvFlags">266</int>
 					<string key="NSFrame">{{0, 431}, {320, 49}}</string>
 					<reference key="NSSuperview"/>
+					<reference key="NSNextKeyView"/>
 					<object class="NSColor" key="IBUIBackgroundColor">
 						<int key="NSColorSpace">3</int>
 						<bytes key="NSWhite">MCAwAA</bytes>
 					</object>
 					<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
 					<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-					<object class="NSMutableArray" key="IBUIItems">
-						<bool key="EncodedWithXMLCoder">YES</bool>
-						<reference ref="456905354"/>
-						<reference ref="957346419"/>
-					</object>
-					<reference key="IBUISelectedItem" ref="456905354"/>
 				</object>
 			</object>
 		</object>
@@ -454,8 +450,17 @@
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<object class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
-			<string key="NS.key.0">tabbar_suggestions.png</string>
-			<string key="NS.object.0">{26, 26}</string>
+			<bool key="EncodedWithXMLCoder">YES</bool>
+			<object class="NSArray" key="dict.sortedKeys">
+				<bool key="EncodedWithXMLCoder">YES</bool>
+				<string>tabbar_info.png</string>
+				<string>tabbar_suggestions.png</string>
+			</object>
+			<object class="NSMutableArray" key="dict.values">
+				<bool key="EncodedWithXMLCoder">YES</bool>
+				<string>{26, 26}</string>
+				<string>{26, 26}</string>
+			</object>
 		</object>
 		<string key="IBCocoaTouchPluginVersion">301</string>
 	</data>

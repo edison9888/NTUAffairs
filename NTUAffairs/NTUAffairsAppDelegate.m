@@ -18,6 +18,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleBlackOpaque;
+    
     // Add the tab bar controller's current view as a subview of the window
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
