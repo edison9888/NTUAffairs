@@ -24,6 +24,8 @@
 		C4CD1D00137A5B76007D5F8C /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4CD1D01137A5B76007D5F8C /* MainWindow.xib */; };
 		C4CD1D03137A5B95007D5F8C /* FirstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4CD1D04137A5B95007D5F8C /* FirstView.xib */; };
 		C4CD1D05137A5B9B007D5F8C /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4CD1D06137A5B9B007D5F8C /* SecondView.xib */; };
+		C4CD1D18137A65CF007D5F8C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C4CD1D16137A65CF007D5F8C /* Default.png */; };
+		C4CD1D19137A65CF007D5F8C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4CD1D17137A65CF007D5F8C /* Default@2x.png */; };
 		C4DA82BC1374CD090027E634 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4DA82BB1374CD090027E634 /* UIKit.framework */; };
 		C4DA82BE1374CD090027E634 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4DA82BD1374CD090027E634 /* Foundation.framework */; };
 		C4DA82C01374CD090027E634 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4DA82BF1374CD090027E634 /* CoreGraphics.framework */; };
@@ -53,6 +55,8 @@
 		C4CD1D01137A5B76007D5F8C /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		C4CD1D04137A5B95007D5F8C /* FirstView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstView.xib; sourceTree = "<group>"; };
 		C4CD1D06137A5B9B007D5F8C /* SecondView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondView.xib; sourceTree = "<group>"; };
+		C4CD1D16137A65CF007D5F8C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Images/Default.png; sourceTree = "<group>"; };
+		C4CD1D17137A65CF007D5F8C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Images/Default@2x.png"; sourceTree = "<group>"; };
 		C4DA82B71374CD090027E634 /* NTUAffairs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NTUAffairs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4DA82BB1374CD090027E634 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C4DA82BD1374CD090027E634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -82,6 +86,8 @@
 		C4091A971376BC3600FDC574 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				C4CD1D16137A65CF007D5F8C /* Default.png */,
+				C4CD1D17137A65CF007D5F8C /* Default@2x.png */,
 				C45A18AC1376CDEC00036E19 /* Icon@2x.png */,
 				C45A18AD1376CDEC00036E19 /* Icon.png */,
 				C45A18AE1376CDEC00036E19 /* Icon-Small@2x.png */,
@@ -109,7 +115,6 @@
 		C4DA82AC1374CD090027E634 = {
 			isa = PBXGroup;
 			children = (
-				C42B669C1376AE8500AE0E67 /* QuartzCore.framework */,
 				C4DA82C11374CD090027E634 /* NTUAffairs */,
 				C4DA82BA1374CD090027E634 /* Frameworks */,
 				C4DA82B81374CD090027E634 /* Products */,
@@ -127,6 +132,7 @@
 		C4DA82BA1374CD090027E634 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C42B669C1376AE8500AE0E67 /* QuartzCore.framework */,
 				C4DA82BB1374CD090027E634 /* UIKit.framework */,
 				C4DA82BD1374CD090027E634 /* Foundation.framework */,
 				C4DA82BF1374CD090027E634 /* CoreGraphics.framework */,
@@ -222,6 +228,8 @@
 				C45A18B31376CDEC00036E19 /* Icon-Small.png in Resources */,
 				C461E598137A555E00AE5643 /* tabbar_info@2x.png in Resources */,
 				C461E59B137A55A600AE5643 /* tabbar_info.png in Resources */,
+				C4CD1D18137A65CF007D5F8C /* Default.png in Resources */,
+				C4CD1D19137A65CF007D5F8C /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,12 +303,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Chen-Yu Wei";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Chen-Yu Wei";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NTUAffairs/NTUAffairs-Prefix.pch";
 				INFOPLIST_FILE = "NTUAffairs/NTUAffairs-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "DBD148F6-1235-455D-AAF8-2D66EF3AAA1E";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "DBD148F6-1235-455D-AAF8-2D66EF3AAA1E";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
