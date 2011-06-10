@@ -180,10 +180,18 @@
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
     NSLog(@"webViewDidFinishLoad");
     switch (load_page) {
+        case LOAD_LOGOUT_PAGE:
+            NSLog(@"logged out");
+            break;
+            
         case LOAD_PROPOSE_POSTED_PAGE:
             customAlertView.alertTextLabel.text = @"成功！";
             [customAlertView performSelector:@selector(dismiss) withObject:nil afterDelay:3.0];
             NSLog(@"propose posted");
+            // logout
+            NSURLRequest *request2 = [NSURLRequest requestWithURL:[NSURL URLWithString:@"https://mis.cc.ntu.edu.tw/suggest/asp/mainfunc.asp?act=%B5n%A5X"]];
+            [webview loadRequest:request2];
+            load_page = LOAD_LOGOUT_PAGE;
             break;
             
         case LOAD_PROPOSE_PAGE:
