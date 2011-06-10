@@ -182,6 +182,7 @@
     switch (load_page) {
         case LOAD_LOGOUT_PAGE:
             NSLog(@"logged out");
+
             break;
             
         case LOAD_PROPOSE_POSTED_PAGE:
@@ -192,6 +193,11 @@
             NSURLRequest *request2 = [NSURLRequest requestWithURL:[NSURL URLWithString:@"https://mis.cc.ntu.edu.tw/suggest/asp/mainfunc.asp?act=%B5n%A5X"]];
             [webview loadRequest:request2];
             load_page = LOAD_LOGOUT_PAGE;
+            
+            // clear field
+            self.subjectTextField.text = @"";
+            self.contentTextView.text = @"";
+            
             break;
             
         case LOAD_PROPOSE_PAGE:
