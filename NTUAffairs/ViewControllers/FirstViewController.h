@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "CustomAlertView.h"
+#import "ImgurUploader.h"
 
 typedef enum {
     LOAD_LOGIN_PAGE,
@@ -26,7 +27,7 @@ typedef enum {
     PROPOSAL_CATEGORY_OTHER = 9
 }PROPOSAL_CATEGORY;
 
-@interface FirstViewController : UIViewController <UIActionSheetDelegate,UIImagePickerControllerDelegate> {
+@interface FirstViewController : UIViewController <UIActionSheetDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate,ImgurUploaderDelegate> {
     CustomAlertView *customAlertView;
     
     PROPOSAL_CATEGORY proposal_category;
@@ -53,6 +54,8 @@ typedef enum {
     UILabel *categoryLabel;
     
     UIActionSheet *actionsheet;
+    
+    ImgurUploader *uploader;
 }
 
 @property (nonatomic, retain) IBOutlet UITextField *studentIDtextField;

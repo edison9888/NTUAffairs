@@ -179,34 +179,66 @@
 - (IBAction)addImage {
 	UIImagePickerController *imagePicker = [[[UIImagePickerController alloc] init] autorelease];
 	imagePicker.delegate = self;
+//    UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:imagePicker];
+//    [self presentModalViewController:nc animated:YES];
+//    [imagePicker release];
+    [self presentModalViewController:imagePicker animated:YES];
+    
 //    imagePickerPopoverController = [[UIPopoverController alloc] initWithContentViewController:imagePicker];
 //    [imagePickerPopoverController presentPopoverFromRect:self.addImageButton.frame inView:self.view permittedArrowDirections:UIPopoverArrowDirectionUp animated:YES];
 }
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
     NSLog(@"%@", info);
-    
-	UIImage *image = [info valueForKey:@"UIImagePickerControllerOriginalImage"];
-	
-	NSString *pngPath = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/uploadImage.png"];
-	[UIImagePNGRepresentation(image) writeToFile:pngPath atomically:YES];
-	
-	/*     for debuging    */
-	// Create file manager
-	NSError *error;
-	NSFileManager *fileMgr = [[NSFileManager alloc] init];
-	
-	// Point to Document directory
-	NSString *documentsDirectory = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"];
-	
-	// Write out the contents of home directory to console
-	NSLog(@"Documents directory: %@", [fileMgr contentsOfDirectoryAtPath:documentsDirectory error:&error]);
+    [self dismissModalViewControllerAnimated:YES];
+//	UIImage *image = [info valueForKey:@"UIImagePickerControllerOriginalImage"];
+//	
+//	NSString *pngPath = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/uploadImage.png"];
+//	[UIImagePNGRepresentation(image) writeToFile:pngPath atomically:YES];
+//	
+//	/*     for debuging    */
+//	// Create file manager
+//	NSError *error;
+//	NSFileManager *fileMgr = [[NSFileManager alloc] init];
+//	
+//	// Point to Document directory
+//	NSString *documentsDirectory = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"];
+//	
+//	// Write out the contents of home directory to console
+//	NSLog(@"Documents directory: %@", [fileMgr contentsOfDirectoryAtPath:documentsDirectory error:&error]);
 	
 //    _customAlertView = [[FWCustomAlertView alloc] initWithTitle:@"Uploading Photo..."];
 //    [_customAlertView show];
 //    [_customAlertView release];
+
+    customAlertView = [[[CustomAlertView alloc] initWithText:@"上傳中..."] autorelease];
+    [customAlertView show];
+    
+    uploader = [[ImgurUploader alloc] init];
+    uploader.delegate = self;
+    [uploader uploadImage:[info objectForKey:UIImagePickerControllerOriginalImage]];
 }
 
+-(void)uploadFailedWithError:(NSError*)error {
+    NSLog(@"uploadFailedWithError = %@",error);
+    if (customAlertView) {
+        customAlertView.alertTextLabel.text = [error localizedDescription];
+        [customAlertView performSelector:@selector(dismiss) withObject:nil afterDelay:3.0];
+    }
+}
+
+-(void)uploadProgressedToPercentage:(CGFloat)percentage {
+    NSLog(@"uploadProgressedToPercentage = %f",percentage);
+}
+
+-(void)imageUploadedWithURLString:(NSString*)urlString {
+    NSLog(@"imageUploadedWithURLString = %@",urlString);
+    self.contentTextView.text = [NSString stringWithFormat:@"%@ %@",self.contentTextView.text,urlString];
+    
+    customAlertView.alertTextLabel.text = @"成功！";
+    customAlertView.indicatorView.hidden = YES;
+    [customAlertView performSelector:@selector(dismiss) withObject:nil afterDelay:1.0];
+}
 
 #pragma mark - UIWebViewDeleate
 
