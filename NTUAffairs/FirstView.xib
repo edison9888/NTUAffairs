@@ -4531,8 +4531,8 @@ AAMAAAABAAEAAAFTAAMAAAAEAAACAgAAAAAACAAIAAgACAABAAEAAQABA</bytes>
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<object class="IBUITextView" id="463072540">
 								<reference key="NSNextResponder" ref="140498427"/>
-								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{62, 5}, {230, 189}}</string>
+								<int key="NSvFlags">290</int>
+								<string key="NSFrame">{{62, 5}, {258, 189}}</string>
 								<reference key="NSSuperview" ref="140498427"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView"/>

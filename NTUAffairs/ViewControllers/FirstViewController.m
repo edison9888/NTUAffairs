@@ -219,6 +219,12 @@
 #pragma mark - Upload Image
 
 - (IBAction)addImage {
+    [self.studentIDtextField resignFirstResponder];
+    [self.passwordTextField resignFirstResponder];
+    [self.emailTextField resignFirstResponder];
+    [self.subjectTextField resignFirstResponder];
+    [self.contentTextView resignFirstResponder];
+    
 	UIImagePickerController *imagePicker = [[[UIImagePickerController alloc] init] autorelease];
 	imagePicker.delegate = self;
 //    UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:imagePicker];
@@ -265,6 +271,7 @@
     NSLog(@"uploadFailedWithError = %@",error);
     if (customAlertView) {
         customAlertView.alertTextLabel.text = [error localizedDescription];
+        customAlertView.indicatorView.hidden = YES;
         [customAlertView performSelector:@selector(dismiss) withObject:nil afterDelay:3.0];
     }
 }
@@ -275,11 +282,12 @@
 
 -(void)imageUploadedWithURLString:(NSString*)urlString {
     NSLog(@"imageUploadedWithURLString = %@",urlString);
-    self.contentTextView.text = [NSString stringWithFormat:@"%@ %@",self.contentTextView.text,urlString];
+    self.contentTextView.text = [NSString stringWithFormat:@"%@\n%@ \n",self.contentTextView.text,urlString];
     
     customAlertView.alertTextLabel.text = @"成功！";
     customAlertView.indicatorView.hidden = YES;
     [customAlertView performSelector:@selector(dismiss) withObject:nil afterDelay:1.0];
+    [self.contentTextView performSelector:@selector(becomeFirstResponder) withObject:nil afterDelay:0.9];
 }
 
 #pragma mark - UIWebViewDeleate
