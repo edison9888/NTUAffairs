@@ -174,6 +174,48 @@
 
 }
 
+#pragma mark - UITextViewDelegate
+
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+    NSLog(@"textField %d %d %@",range.location,range.length,string);
+    if ([string isEqualToString:@"\n"]) {
+        switch (textField.tag) {
+            case 1:
+                [self.passwordTextField becomeFirstResponder];
+                [self.tableview scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:1 inSection:0] atScrollPosition:UITableViewScrollPositionMiddle animated:YES];
+                break;
+            case 2:
+                [self.emailTextField becomeFirstResponder];
+                [self.tableview scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:1 inSection:1] atScrollPosition:UITableViewScrollPositionMiddle animated:YES];
+                break;
+            case 3:
+                [self.subjectTextField becomeFirstResponder];
+                [self.tableview scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:2 inSection:1] atScrollPosition:UITableViewScrollPositionMiddle animated:YES];
+                break;
+            case 4:
+                [self.contentTextView becomeFirstResponder];
+                [self.tableview scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:3 inSection:1] atScrollPosition:UITableViewScrollPositionMiddle animated:YES];
+                break;
+            default:
+                break;
+        }
+        
+//        [self hideKeyboard];
+//        [textField resignFirstResponder];
+    }
+    
+    return YES;
+}
+
+- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text {
+    NSLog(@"textField %d %d %@",range.location,range.length,text);
+    if ([text isEqualToString:@"\n"]) {
+        [self hideKeyboard];
+        [textView resignFirstResponder];
+    }
+    return YES;
+}
+
 #pragma mark - Upload Image
 
 - (IBAction)addImage {
