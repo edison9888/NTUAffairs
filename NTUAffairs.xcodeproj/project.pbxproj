@@ -21,10 +21,10 @@
 		C45A18B31376CDEC00036E19 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = C45A18AF1376CDEC00036E19 /* Icon-Small.png */; };
 		C461E598137A555E00AE5643 /* tabbar_info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C461E597137A555E00AE5643 /* tabbar_info@2x.png */; };
 		C461E59B137A55A600AE5643 /* tabbar_info.png in Resources */ = {isa = PBXBuildFile; fileRef = C461E59A137A55A600AE5643 /* tabbar_info.png */; };
-		C4A032D513A754DD00946E99 /* ImgurUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A032CE13A754D700946E99 /* ImgurUploader.m */; };
-		C4A032D613A754DD00946E99 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A032D013A754D800946E99 /* NSData+Base64.m */; };
-		C4A032D713A754DD00946E99 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A032D213A754DA00946E99 /* NSString+URLEncoding.m */; };
-		C4A032D813A754DD00946E99 /* NSString+URLEscape.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A032D413A754DC00946E99 /* NSString+URLEscape.m */; };
+		C4A032E313A7621900946E99 /* ImgurUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A032DC13A7621900946E99 /* ImgurUploader.m */; };
+		C4A032E413A7621900946E99 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A032DE13A7621900946E99 /* NSData+Base64.m */; };
+		C4A032E513A7621900946E99 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A032E013A7621900946E99 /* NSString+URLEncoding.m */; };
+		C4A032E613A7621900946E99 /* NSString+URLEscape.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A032E213A7621900946E99 /* NSString+URLEscape.m */; };
 		C4CD1D00137A5B76007D5F8C /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4CD1D01137A5B76007D5F8C /* MainWindow.xib */; };
 		C4CD1D03137A5B95007D5F8C /* FirstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4CD1D04137A5B95007D5F8C /* FirstView.xib */; };
 		C4CD1D05137A5B9B007D5F8C /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4CD1D06137A5B9B007D5F8C /* SecondView.xib */; };
@@ -56,14 +56,14 @@
 		C45A18AF1376CDEC00036E19 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small.png"; path = "Images/Icon-Small.png"; sourceTree = "<group>"; };
 		C461E597137A555E00AE5643 /* tabbar_info@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_info@2x.png"; sourceTree = "<group>"; };
 		C461E59A137A55A600AE5643 /* tabbar_info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar_info.png; sourceTree = "<group>"; };
-		C4A032CD13A754D700946E99 /* ImgurUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImgurUploader.h; sourceTree = "<group>"; };
-		C4A032CE13A754D700946E99 /* ImgurUploader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImgurUploader.m; sourceTree = "<group>"; };
-		C4A032CF13A754D800946E99 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
-		C4A032D013A754D800946E99 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
-		C4A032D113A754D900946E99 /* NSString+URLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEncoding.h"; sourceTree = "<group>"; };
-		C4A032D213A754DA00946E99 /* NSString+URLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEncoding.m"; sourceTree = "<group>"; };
-		C4A032D313A754DC00946E99 /* NSString+URLEscape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEscape.h"; sourceTree = "<group>"; };
-		C4A032D413A754DC00946E99 /* NSString+URLEscape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEscape.m"; sourceTree = "<group>"; };
+		C4A032DB13A7621900946E99 /* ImgurUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImgurUploader.h; path = ImgurUploadAPI/ImgurUploader.h; sourceTree = "<group>"; };
+		C4A032DC13A7621900946E99 /* ImgurUploader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImgurUploader.m; path = ImgurUploadAPI/ImgurUploader.m; sourceTree = "<group>"; };
+		C4A032DD13A7621900946E99 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+Base64.h"; path = "ImgurUploadAPI/NSData+Base64.h"; sourceTree = "<group>"; };
+		C4A032DE13A7621900946E99 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+Base64.m"; path = "ImgurUploadAPI/NSData+Base64.m"; sourceTree = "<group>"; };
+		C4A032DF13A7621900946E99 /* NSString+URLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+URLEncoding.h"; path = "ImgurUploadAPI/NSString+URLEncoding.h"; sourceTree = "<group>"; };
+		C4A032E013A7621900946E99 /* NSString+URLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+URLEncoding.m"; path = "ImgurUploadAPI/NSString+URLEncoding.m"; sourceTree = "<group>"; };
+		C4A032E113A7621900946E99 /* NSString+URLEscape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+URLEscape.h"; path = "ImgurUploadAPI/NSString+URLEscape.h"; sourceTree = "<group>"; };
+		C4A032E213A7621900946E99 /* NSString+URLEscape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+URLEscape.m"; path = "ImgurUploadAPI/NSString+URLEscape.m"; sourceTree = "<group>"; };
 		C4CD1D01137A5B76007D5F8C /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		C4CD1D04137A5B95007D5F8C /* FirstView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstView.xib; sourceTree = "<group>"; };
 		C4CD1D06137A5B9B007D5F8C /* SecondView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondView.xib; sourceTree = "<group>"; };
@@ -127,14 +127,14 @@
 		C4A032DA13A754E600946E99 /* Imgur Upload */ = {
 			isa = PBXGroup;
 			children = (
-				C4A032CD13A754D700946E99 /* ImgurUploader.h */,
-				C4A032CE13A754D700946E99 /* ImgurUploader.m */,
-				C4A032CF13A754D800946E99 /* NSData+Base64.h */,
-				C4A032D013A754D800946E99 /* NSData+Base64.m */,
-				C4A032D113A754D900946E99 /* NSString+URLEncoding.h */,
-				C4A032D213A754DA00946E99 /* NSString+URLEncoding.m */,
-				C4A032D313A754DC00946E99 /* NSString+URLEscape.h */,
-				C4A032D413A754DC00946E99 /* NSString+URLEscape.m */,
+				C4A032DB13A7621900946E99 /* ImgurUploader.h */,
+				C4A032DC13A7621900946E99 /* ImgurUploader.m */,
+				C4A032DD13A7621900946E99 /* NSData+Base64.h */,
+				C4A032DE13A7621900946E99 /* NSData+Base64.m */,
+				C4A032DF13A7621900946E99 /* NSString+URLEncoding.h */,
+				C4A032E013A7621900946E99 /* NSString+URLEncoding.m */,
+				C4A032E113A7621900946E99 /* NSString+URLEscape.h */,
+				C4A032E213A7621900946E99 /* NSString+URLEscape.m */,
 			);
 			name = "Imgur Upload";
 			sourceTree = "<group>";
@@ -274,10 +274,10 @@
 				C45A18951376CABC00036E19 /* SecondViewController.m in Sources */,
 				C45A18A11376CAEF00036E19 /* CustomAlertView.m in Sources */,
 				C45A18A31376CAEF00036E19 /* UIView-AlertAnimations.m in Sources */,
-				C4A032D513A754DD00946E99 /* ImgurUploader.m in Sources */,
-				C4A032D613A754DD00946E99 /* NSData+Base64.m in Sources */,
-				C4A032D713A754DD00946E99 /* NSString+URLEncoding.m in Sources */,
-				C4A032D813A754DD00946E99 /* NSString+URLEscape.m in Sources */,
+				C4A032E313A7621900946E99 /* ImgurUploader.m in Sources */,
+				C4A032E413A7621900946E99 /* NSData+Base64.m in Sources */,
+				C4A032E513A7621900946E99 /* NSString+URLEncoding.m in Sources */,
+				C4A032E613A7621900946E99 /* NSString+URLEscape.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
