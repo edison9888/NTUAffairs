@@ -3,7 +3,12 @@ What's This?
 
 It's a native client wrap around 台大校務建言系統 for iOS devices. Login with your student id and post your suggestions!
 
-Multitask is disabled for this app, to post a new suggestion just press home button and relaunch.
+**Multitask is disabled for this app, to post a new suggestion just press home button and relaunch.**
+
+Functionality
+=============
+1. Post your advise using iOS native client!
+2. Add photos to describe your problem more precisely (photos are uploaded to imgur anonymously)
 
 TBD
 ===
