@@ -174,6 +174,39 @@
 
 }
 
+#pragma mark - Upload Image
+
+- (IBAction)addImage {
+	UIImagePickerController *imagePicker = [[[UIImagePickerController alloc] init] autorelease];
+	imagePicker.delegate = self;
+//    imagePickerPopoverController = [[UIPopoverController alloc] initWithContentViewController:imagePicker];
+//    [imagePickerPopoverController presentPopoverFromRect:self.addImageButton.frame inView:self.view permittedArrowDirections:UIPopoverArrowDirectionUp animated:YES];
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+    NSLog(@"%@", info);
+    
+	UIImage *image = [info valueForKey:@"UIImagePickerControllerOriginalImage"];
+	
+	NSString *pngPath = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/uploadImage.png"];
+	[UIImagePNGRepresentation(image) writeToFile:pngPath atomically:YES];
+	
+	/*     for debuging    */
+	// Create file manager
+	NSError *error;
+	NSFileManager *fileMgr = [[NSFileManager alloc] init];
+	
+	// Point to Document directory
+	NSString *documentsDirectory = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"];
+	
+	// Write out the contents of home directory to console
+	NSLog(@"Documents directory: %@", [fileMgr contentsOfDirectoryAtPath:documentsDirectory error:&error]);
+	
+//    _customAlertView = [[FWCustomAlertView alloc] initWithTitle:@"Uploading Photo..."];
+//    [_customAlertView show];
+//    [_customAlertView release];
+}
+
 
 #pragma mark - UIWebViewDeleate
 

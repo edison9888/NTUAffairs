@@ -26,7 +26,7 @@ typedef enum {
     PROPOSAL_CATEGORY_OTHER = 9
 }PROPOSAL_CATEGORY;
 
-@interface FirstViewController : UIViewController <UIActionSheetDelegate> {
+@interface FirstViewController : UIViewController <UIActionSheetDelegate,UIImagePickerControllerDelegate> {
     CustomAlertView *customAlertView;
     
     PROPOSAL_CATEGORY proposal_category;
